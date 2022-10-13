@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar  {
+  width: 8px;
+  background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-techs);
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+main {
+  display: flex;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+span {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.sidebar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.content {
+  margin-left: 3rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  background-color: var(--bg-cards);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 14px -6px rgba(0,0,0,0.75);
+}
+
+#profile {
+  padding: 3rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.profile-picture img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 10rem;
+  border: 3px solid #00b418;
+}
+
+/* Connections*/
+#connections {
+  padding: 2rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#connections svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: .5rem;
+}
+
+/* Technologies */
+#technologies {
+  padding: 1.5rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.cards-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.card-tech {
+  padding: .3rem .8rem;
+  width: fit-content;
+  background-color: var(--bg-techs);
+  color: var(--bg-cards);
+  border-radius: 1rem;
+}
+
+.card-tech p {
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+/* Career */
+#career-education {
+  padding: 1.5rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+#career-education ul {
+  margin-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+#career-education li {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#career-education p {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+/* Projects */
+#my-projects {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Best Projects */
+#best-projects {
+  display: flex;
+  gap: 1rem;
+}
+
+#card-project {
+  width: 50%;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-title {
+  display: flex;
+  align-items: flex-end;
+  gap: .5rem;
+}
+
+.project-title svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.project-description {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.project-subsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-infos {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .9rem;
+}
+
+.project-info svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.tech-name li {
+  list-style-type: none;
+  position:relative;
+  margin-bottom:0.5em;
+}
+
+.tech-name li:before {
+  content: '•';
+  display: inline-block;
+  position: absolute;
+  left: -1em;
+  color:#00b418;
+}
+
+/* Post */
+#post {
+  padding: 1rem 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.post-picture img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  border: none;
+}
+
+.post-title {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.post-title p {
+  font-size: .75rem;
+}
+
+.post-description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.post-description p {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.tags {
+  display: flex;
+  gap: .5rem;
+}
+
+.tags p {
+  font-size: .7rem;
+}
